@@ -93,7 +93,7 @@ def persist_image(folder_path:str,url:str):
         print(f"ERROR - Could not save {url} - {e}")
 
 # Define a function to get the URL and download the image
-def search_and_download(search_term:str,driver_path:str,target_path='./images',number_images:int):
+def search_and_download(search_term:str,driver_path:str,number_images:int,target_path='./images'):
     target_folder = os.path.join(target_path,'_'.join(search_term.lower().split(' ')))
 
     if not os.path.exists(target_folder):
